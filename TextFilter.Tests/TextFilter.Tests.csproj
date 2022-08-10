@@ -21,11 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TextFilter\TextFilter.csproj" />
+    <Folder Include="IntegrationTests\TestFiles\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IntegrationTests\TestFiles\" />
+    <ProjectReference Include="..\TextFilterUtilities\TextFilterUtilities.csproj" />
   </ItemGroup>
 
   <ItemGroup>

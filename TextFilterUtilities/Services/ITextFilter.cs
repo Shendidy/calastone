@@ -1,4 +1,4 @@
-﻿namespace TextFilter.Services
+﻿namespace TextFilterUtilities
 {
     public interface ITextFilter
     {

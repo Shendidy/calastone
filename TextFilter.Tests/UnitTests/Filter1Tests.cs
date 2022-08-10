@@ -1,4 +1,6 @@
-﻿using Xunit;
+﻿using TextFilterUtilities;
+
+using Xunit;
 
 namespace TextFilter.UnitTests
 {

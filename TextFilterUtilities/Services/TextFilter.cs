@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextFilter.Services
+namespace TextFilterUtilities.Services
 {
     public class TextFilter : ITextFilter
     {

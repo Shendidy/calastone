@@ -1,4 +1,4 @@
-﻿namespace TextFilter
+﻿namespace TextFilterUtilities
 {
     public class Filter1 : IFilter1
     {

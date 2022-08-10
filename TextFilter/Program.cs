@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
 using Serilog;
 
-using TextFilter;
-using TextFilter.Services;
+using TextFilterUtilities;
+
+using TFUS = TextFilterUtilities.Services;
 
 namespace TextFilter
 {
@@ -29,7 +29,7 @@ namespace TextFilter
                     services.AddSingleton<IFilter1, Filter1>();
                     services.AddSingleton<IFilter2, Filter2>();
                     services.AddSingleton<IFilter3, Filter3>();
-                    services.AddSingleton<ITextFilter, Services.TextFilter>();
+                    services.AddSingleton<ITextFilter, TFUS.TextFilter>();
                 })
                 .UseSerilog()
                 .Build();

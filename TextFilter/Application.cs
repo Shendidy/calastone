@@ -1,9 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-using TextFilter.Services;
-
-using TFS = TextFilter.Services;
+using TextFilterUtilities;
 
 namespace TextFilter
 {

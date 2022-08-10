@@ -1,4 +1,6 @@
-﻿using Xunit;
+﻿using TextFilterUtilities;
+using TFUS = TextFilterUtilities.Services;
+using Xunit;
 
 namespace TextFilter.UnitTests
 {
@@ -14,7 +16,7 @@ namespace TextFilter.UnitTests
             IFilter1 filter1 = new Filter1();
             IFilter2 filter2 = new Filter2();
             IFilter3 filter3 = new Filter3();
-            Services.TextFilter textFilter = new Services.TextFilter(filter1, filter2, filter3);
+            TFUS.TextFilter textFilter = new TFUS.TextFilter(filter1, filter2, filter3);
 
             //Action
             var actual = textFilter.GetFilteredText(text);

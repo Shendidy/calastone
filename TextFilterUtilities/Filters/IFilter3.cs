@@ -1,4 +1,4 @@
-﻿namespace TextFilter
+﻿namespace TextFilterUtilities
 {
     public interface IFilter3
     {

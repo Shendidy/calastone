@@ -1,7 +1,6 @@
 ﻿using System.IO;
-
-using TextFilter.Services;
-
+using TextFilterUtilities;
+using TFUS = TextFilterUtilities.Services;
 using Xunit;
 
 namespace TextFilter.Tests.IntegrationTests
@@ -21,7 +20,7 @@ namespace TextFilter.Tests.IntegrationTests
             IFilter2 filter2 = new Filter2();
             IFilter3 filter3 = new Filter3();
 
-            ITextFilter textFilter = new Services.TextFilter(filter1, filter2, filter3);
+            ITextFilter textFilter = new TFUS.TextFilter(filter1, filter2, filter3);
 
             //Action
             var actual = textFilter.GetFilteredText(testText);

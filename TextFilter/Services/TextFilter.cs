@@ -24,7 +24,7 @@ namespace TextFilter.Services
             if (originalText.Length > 2)
             {
                 var splitText = originalText.Split(' ');
-                StringBuilder filteredText = new StringBuilder();
+                StringBuilder filteredText = new();
 
                 foreach (var word in splitText)
                 {
